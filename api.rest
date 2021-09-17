@@ -1,0 +1,26 @@
+@apiurl = http://localhost:4000/comments
+
+### get comments
+GET {{apiurl}}
+
+### create comment
+POST {{apiurl}}
+Content-Type: application/json
+
+{
+"author": "Thomas Shelby", "comment": "Great"
+}
+
+### get one comment
+GET {{apiurl}}/6145188faa10c1fbc65bfbb2
+
+### update comment
+PUT {{apiurl}}/6145188faa10c1fbc65bfbb2
+Content-Type: application/json
+
+{
+"comment": "Sick API fam'"
+}
+
+### delete comment
+DELETE {{apiurl}}/6145188faa10c1fbc65bfbb2
