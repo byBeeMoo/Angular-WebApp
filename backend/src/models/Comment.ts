@@ -8,7 +8,7 @@ const Comment = new Schema({
     comment: {
         type: String,
         required: true
-    }
+    },
 }, 
 {
     versionKey: false,

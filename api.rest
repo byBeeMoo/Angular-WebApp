@@ -8,14 +8,14 @@ POST {{apiurl}}
 Content-Type: application/json
 
 {
-"author": "Thomas Shelby", "comment": "Great"
+"author": "Tommy D", "comment": "Great great! Suxxess"
 }
 
 ### get one comment
-GET {{apiurl}}/6145188faa10c1fbc65bfbb2
+GET {{apiurl}}/61451cc127e661058d001c3a
 
 ### update comment
-PUT {{apiurl}}/6145188faa10c1fbc65bfbb2
+PUT {{apiurl}}/61451cc127e661058d001c3a
 Content-Type: application/json
 
 {
@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ### delete comment
-DELETE {{apiurl}}/6145188faa10c1fbc65bfbb2
+DELETE {{apiurl}}/61451cc127e661058d001c3a
