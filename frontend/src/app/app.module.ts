@@ -8,6 +8,11 @@ import { CommentFormComponent } from './components/comment-form/comment-form.com
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentsFrameComponent } from './components/comments-frame/comments-frame.component';
 import { MainComponent } from './components/main/main.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { StudiesComponent } from './components/studies/studies.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { MainComponent } from './components/main/main.component';
     CommentFormComponent,
     CommentComponent,
     CommentsFrameComponent,
-    MainComponent
+    MainComponent,
+    AboutmeComponent,
+    ProjectsComponent,
+    StudiesComponent,
+    BlogComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

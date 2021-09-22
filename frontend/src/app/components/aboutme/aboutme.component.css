@@ -1,0 +1,38 @@
+.about {
+    margin-top: 4.5em;
+}
+
+.aboutmetext{
+    font-size: 2.5em;
+    padding-right: 8em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.work:hover {
+    background-color: #ffc107;
+    color: #fff !important;
+    text-shadow: 0 0 1px rgb(255 255 255 / 30%), 0 0 2px rgb(255 255 255 / 30%), 0 0 5px rgb(255 255 255 / 20%);
+    box-shadow: 0 0 2rem rgb(255 199 32 / 40%), 0 0 8rem rgb(255 199 32 / 30%);
+}
+
+.interests:hover{
+    background-color: #e44c55;
+    color: #fff !important;
+    text-shadow: 0 0 1px rgb(255 255 255 / 30%), 0 0 2px rgb(255 255 255 / 30%), 0 0 5px rgb(255 255 255 / 20%);
+    box-shadow: 0 0 2rem rgb(231 94 102 / 40%), 0 0 8rem rgb(231 94 102 / 30%);
+}
+
+.resume:hover{
+    background-color: #1ba2f6;
+    color: #fff !important;
+    text-shadow: 0 0 1px rgb(255 255 255 / 30%), 0 0 2px rgb(255 255 255 / 30%), 0 0 5px rgb(255 255 255 / 20%);
+    box-shadow: 0 0 2rem rgb(50 171 247 / 40%), 0 0 8rem rgb(50 171 247 / 30%);
+}
+
+.mail{
+    height: 100%;
+    width: 100%;
+}
