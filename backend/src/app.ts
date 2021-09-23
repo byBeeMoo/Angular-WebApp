@@ -12,7 +12,7 @@ app.set("port", config.PORT);
 
 // MiddleWares
 app.use(morgan('dev'));                             // Prints clients requests information
-app.use(cors());                                    // Allows other servers to send requests to this server
+app.use(cors({origin: "http://localhost:4200"}));   // Allows other servers to send requests to this server
 app.use(express.json());                            // Allows the app to interpret JSON Objects on requests
 app.use(express.urlencoded({extended: false}));     // Interpret better the fields coming form a POST request
 

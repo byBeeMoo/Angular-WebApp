@@ -9,20 +9,20 @@ import { ResumeComponent } from './components/resume/resume.component';
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent
+    component: MainComponent,
   },
   {
     path: 'projects',
-    component: ProjectsComponent
+    component: ProjectsComponent,
   },
   {
     path: 'blog',
-    component: BlogComponent
+    component: BlogComponent,
   },
   {
     path: 'resume',
-    component: ResumeComponent
-  }
+    component: ResumeComponent,
+  },
 ];
 
 @NgModule({

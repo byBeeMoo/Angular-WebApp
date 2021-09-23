@@ -1,1 +1,13 @@
-<p>comment works!</p>
+<div class="container comments-container" style="max-width: 50rem;">
+    <h3 class="text-center mb-5">Comments</h3>
+
+    <div class="container" *ngFor="let comment of commentService.comments">
+      <div class="card text-white bg-dark mb-3">
+          <div class="card-header">{{ comment.author }}</div>
+          <div class="card-body">
+            <p class="card-text">{{ comment.comment }}</p>
+          </div>
+      </div>
+
+    </div>
+</div>
