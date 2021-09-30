@@ -15,6 +15,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { StudiesComponent } from './components/studies/studies.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import  {  PdfViewerModule  }  from  'ng2-pdf-viewer';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     BlogComponent,
     ResumeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, PdfViewerModule],
   providers: [],
   bootstrap: [AppComponent],
 })
