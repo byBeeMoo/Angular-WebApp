@@ -8,7 +8,7 @@ POST {{apiurl}}
 Content-Type: application/json
 
 {
-"author": "Tommy D", "comment": "Great great! Suxxess"
+"author": "Tommy D", "comment": "Great great! Suxxess", "ip": "a"
 }
 
 ### get one comment
