@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand">Luca Berni</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-brand">Luca Berni</span>
+        <button class="navbar-toggler" (click)="navToggle()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTarget" aria-controls="collapseTarget" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="collapseTarget">
             <ul class="navbar-nav d-md-flex">
                 <li class="nav-item d-flex">
                     <a class="nav-link active" aria-current="page" routerLink="/">Home</a>

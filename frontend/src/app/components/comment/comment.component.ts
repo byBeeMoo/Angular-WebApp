@@ -7,24 +7,16 @@ import { CommentService } from '../../services/comment.service';
   styleUrls: ['./comment.component.css'],
 })
 export class CommentComponent implements OnInit {
-
-  anyComments: boolean = true;
-
-
   constructor(public commentService: CommentService) {}
 
   ngOnInit(): void {
     this.getComments();
-    
   }
 
   getComments() {
     this.commentService.getComments().subscribe(
       (res) => {
-        this.commentService.comments = res;                
-        if (this.commentService.comments.length != 0) {
-          this.anyComments = false;
-        }
+        this.commentService.comments = res;
       },
       (err) => {
         console.error(err);

@@ -15,6 +15,7 @@ export class CommentService {
     author: '',
     comment: '',
   };
+  anyComments: boolean = true;
 
   constructor(private http: HttpClient) {}
 

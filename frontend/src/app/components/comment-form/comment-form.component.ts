@@ -17,7 +17,10 @@ export class CommentFormComponent implements OnInit {
     let objType = this.commentService.createComment(form.value);
     if (isObservable(objType)) {
       objType.subscribe(
-        (res) => form.reset(),
+        (res) => { 
+          form.reset();
+          this.commentService.anyComments = false;
+        },
         (err) => console.error(err)
       );
     }
