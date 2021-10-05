@@ -25,7 +25,6 @@ export class CommentService {
 
   createComment(comment: Comment) {
     if (comment.author != null && comment.comment != null) {
-      this.comments.push(comment);
       return this.http.post(this.URL_API, comment);
     } else {
       console.log('Cannot send empty form, dont be evil');

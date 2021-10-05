@@ -17,6 +17,9 @@ export class CommentComponent implements OnInit {
     this.commentService.getComments().subscribe(
       (res) => {
         this.commentService.comments = res;
+        if(this.commentService.comments.length > 0) {
+          this.commentService.anyComments = false;
+        }
       },
       (err) => {
         console.error(err);

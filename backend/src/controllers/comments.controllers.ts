@@ -13,13 +13,10 @@ export const getComment: RequestHandler = async (req,res) => {
 
 export const createComment: RequestHandler = async (req,res) => {
     const ip = JSON.parse('{"ip": "' + req.ip + '"}');
-    const json = Object.assign({}, req.body, ip);
-    console.log(json);
+    const json = Object.assign({}, req.body, ip);  
+    const res1 = await Comment.find(ip);
     
-    const res1 = await Comment.find(json);
-    const res2 = await Comment.find(ip);
-
-    if (res1 == []){ // if ip never posted a comment
+    if (res1.toString() == '') { // prevents flooding correctly now, doesnt expect more than 1 comment per person/ip
         try{
             const newComment = new Comment(json);
             const doc = await newComment.save();
@@ -31,7 +28,7 @@ export const createComment: RequestHandler = async (req,res) => {
             
             res.json(`Error: ${errorName}: Field '${errorMsg}' is missing.'`);
         }
-    } else if (res2 != []) { // if ip already posted a comment (prevents flooding, im not expecting more than 1 comment per person)
+    } else {
         res.send("Stop flooding my comments.")
     }
 };
