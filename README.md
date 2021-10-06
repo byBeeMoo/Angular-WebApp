@@ -62,5 +62,5 @@ Themes are loaded through bootswatch package, to change frontend theme lookup fo
             ],
 ```
 
-!! Disclaimer !!
+__!! Disclaimer !!__\
 You may need to adapt css for some components to get a clean look of the theme.
