@@ -57,7 +57,7 @@ Themes are loaded through bootswatch package, to change frontend theme lookup fo
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootswatch/dist/vapor/bootstrap.min.css",     # In this lane change vapor for your desired theme
+              "node_modules/bootswatch/dist/vapor/bootstrap.min.css",     // Here change vapor for your desired theme
               "src/styles.css"
             ],
 ```
